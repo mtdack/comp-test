@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h2>{{title}}</h2>
+    <p>{{msg}}</p>
+    {% block url %}{% endblock %}
+</body>
+</html>

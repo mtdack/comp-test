@@ -1,0 +1,43 @@
+{% extends 'next/layout.html' %}
+
+{% block url %}
+<a href="{% url next %}">{{next}}</a>
+
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>名前</th>
+            <th>メールアドレス</th>
+            <th>電話番号</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td>name</td>
+              <td>example@example.com</td>
+              <td>address</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+              <td>name</td>
+              <td>example@example.com</td>
+              <td>address</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+              <td>name</td>
+              <td>example@example.com</td>
+              <td>address</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <form action="/url/to/submit/" method="post" class="form">
+        <button type="submit" class="btn btn-primary">
+          Submit
+        </button>
+    </form>
+{% endblock %}
